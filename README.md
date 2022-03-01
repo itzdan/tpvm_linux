@@ -1,9 +1,18 @@
 # tpvm_linux
 ThreatPursuitVM Cyber Threat Intelligence VM for Linux
+- Off-spin of Windows based Mandiant ThreatPursuitVM 
+- Lean and live install for simplicity purposes and Linux fans :)
 
 ## Pre-Reqs
 
+# Base OS
 Tested on Debian Linux 5.10.0-10-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64 GNU/Linux
+
+# Recommended OS Specs
+
+x4 CPU
+8GB Memory
+80GB HDD Capacity
 
 ## Installation
 
