@@ -153,7 +153,11 @@ while [ $opt != '' ]
 		cd /usr/share/tpvm/opencti/opencti-worker/src/;
 		pip3 install -r requirements.txt;
 		cd /usr/share/tpvm/;
+		wget https://dist.torproject.org/torbrowser/11.0.6/tor-browser-linux64-11.0.6_en-US.tar.xz;
+		tar -xf tor-browser-linux64-11.0.6_en-US.tar.xz;
 		apt-get install -y openjdk-8-jre-headless;
+		wget https://maltego-downloads.s3.us-east-2.amazonaws.com/linux/Maltego.v4.3.0.deb;
+		dpkg -i Maltego.v4.3.0.deb;
 		echo JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64" >> /etc/environment;
 		export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64";
 		curl -fsSL https://www.apache.org/dist/cassandra/KEYS | sudo apt-key add -;
@@ -175,7 +179,7 @@ while [ $opt != '' ]
         ;;
         3) clear;
             option_picked "Review Post setup Todo"; #not implemented
-            printf "sudo service apache2 restart"; #in progress
+            printf "not implemented yet.. returning"; #in progress
             show_menu;
         ;;
         x)exit;
