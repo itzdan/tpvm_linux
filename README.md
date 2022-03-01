@@ -17,10 +17,12 @@ Tested on Debian Linux 5.10.0-10-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_
 
 ## Installation
 
-1. Set the script as executable 
+1. Pull the git installer file git clone https://github.com/itzdan/tpvm_linux/blob/main/tpvm_installer.sh
+2. Set the script as executable 
 chmod +x tpvm_installer.sh
-2. Run the installer with sudo priv
+3. Run the installer with sudo priv
 sudo ./tpvm_installer.sh 
-3. Select (1) to configure the pre-reqs
-4. Select (2) to download and install packages 
-5. Select (3) to check and bring up services 
+4. Select (1) to configure the pre-reqs
+5. Select (2) to download and install packages  (Usually about 20mins with fast internet)
+6. Select (3) to check and bring up services  (Not Implemented yet)
+
