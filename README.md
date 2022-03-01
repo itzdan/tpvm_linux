@@ -10,9 +10,10 @@ Tested on Debian Linux 5.10.0-10-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_
 
 ## Recommended OS Specs
 
-x4 CPU
-8GB Memory
-80GB HDD Capacity
+- x4 CPU
+- 8GB Memory
+- 80GB HDD Capacity
+- GPU 512MB or greater
 
 ## Installation
 
