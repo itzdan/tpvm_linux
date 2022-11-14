@@ -1,7 +1,7 @@
 
-# author @itzdan1337 | threat pursuit team 2022
+# author actual[at]google.com | Google Cloud | Advanced Practices Mandiant
 # eula github.com/itzdan/tpvm_linux/LICENSE.md
-# community dev edt 0.1
+# community dev edt 0.2
 
 TPVM_Pass="${TPVM_Pass:-$(openssl rand -hex 12)}" #randomising credential
 
@@ -102,6 +102,8 @@ while [ $opt != '' ]
 		git clone --recurse-submodules --remote-submodule https://github.com/shogun-toolbox/shogun.git;
 		git clone --recurse-submodules --remote-submodule https://github.com/shogun-toolbox/shogun-data.git;
 		git clone --recurse-submodules --remote-submodule https://github.com/GreyNoise-Intelligence/pygreynoise.git;
+		git clone --recurse-submodules --remote-submodule https://github.com/GreyNoise-Intelligence/pygreynoise.git;
+		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/detection-rules.git;
 		printf "grabbing packages..";
 		echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list;
 		apt-get update;
