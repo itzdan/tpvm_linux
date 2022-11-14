@@ -25,4 +25,4 @@ sudo ./tpvm_installer.sh
 4. Select (1) to configure the pre-reqs
 5. Select (2) to download and install packages  (Usually about 20mins with fast internet)
 6. Select (3) to check and bring up services  (Not Implemented yet)
-
+7. A user account and credential is created tpvm:{randomely_generated_password} during the setup process, if you did not take note of the credential it is written into a local creds.txt within your install directory. You are encouraged to change your credential and delete the creds.txt file if you no longer require it during your install.
