@@ -1,7 +1,7 @@
 # tpvm_linux
 ThreatPursuitVM Cyber Threat Intelligence VM for Linux
 - Off-spin of Windows based Mandiant ThreatPursuitVM 
-- Lean and live install for simplicity purposes and Linux fans :)
+- Lean and live install for simplicity purposes and Linux cadre :)
 
 # Pre-Reqs
 
