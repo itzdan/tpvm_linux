@@ -104,6 +104,10 @@ while [ $opt != '' ]
 		git clone --recurse-submodules --remote-submodule https://github.com/GreyNoise-Intelligence/pygreynoise.git;
 		git clone --recurse-submodules --remote-submodule https://github.com/GreyNoise-Intelligence/pygreynoise.git;
 		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/detection-rules.git;
+		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/api-samples-python.git;
+		git clone --recurse-submodules --remote-submodule https://github.com/Chronicle-Security/cbn-tool.git;
+		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/cli.git;
+		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/ingestion-scripts.git;
 		printf "grabbing packages..";
 		echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list;
 		apt-get update;
@@ -149,8 +153,8 @@ while [ $opt != '' ]
 		cd ..;
 		rm -rf stratus*.tar.gz;
 		mkdir /usr/share/opencti && cd /usr/share/opencti;
-		wget https://github.com/OpenCTI-Platform/opencti/releases/download/5.1.4/opencti-release-5.1.4.tar.gz;
-		tar -xzvf opencti-release-5.1.4.tar.gz;
+		wget https://github.com/OpenCTI-Platform/opencti/releases/download/5.3.17/opencti-release-5.3.17.tar.gz;
+		tar -xzvf opencti-release-5.3.17.tar.gz;
 		rm -rf opencti*.gz;
 		cd /usr/share/tpvm/opencti/opencti-worker/src/;
 		pip3 install -r requirements.txt;
