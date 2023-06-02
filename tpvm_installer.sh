@@ -13,7 +13,7 @@ show_menu(){
     echo '▀▀█▀▀ █──█ █▀▀█ █▀▀ █▀▀█ ▀▀█▀▀ █▀▀█ █──█ █▀▀█ █▀▀ █──█ ─▀─ ▀▀█▀▀'
     echo '──█── █▀▀█ █▄▄▀ █▀▀ █▄▄█ ──█── █──█ █──█ █▄▄▀ ▀▀█ █──█ ▀█▀ ──█──'
     echo '──▀── ▀──▀ ▀─▀▀ ▀▀▀ ▀──▀ ──▀── █▀▀▀ ─▀▀▀ ▀─▀▀ ▀▀▀ ─▀▀▀ ▀▀▀ ──▀──'
-    echo '(v) 0.1 dev edition (w) https://github.com/itzdan/tpvm_linux | (c) @itzdan1337'
+    echo '(v) 0.2 dev edition (w) https://github.com/itzdan/tpvm_linux | (c) @itzdan1337'
     normal=`echo "\033[m"`
     menu=`echo "\033[36m"` #green
     number=`echo "\033[33m"` #red
@@ -144,17 +144,17 @@ while [ $opt != '' ]
 		git clone --recurse-submodules https://github.com/mandiant/heyserial.git;
 		git clone --recurse-submodules https://github.com/mandiant/apooxml.git;
 		git clone --recurse-submodules https://github.com/mandiant/ioc_writer.git;
-		wget https://github.com/mandiant/capa/releases/download/v3.1.0/capa-v3.1.0-linux.zip;
-		tar -xzvf capa-v3.1.0-linux.zip;
+		wget https://github.com/mandiant/capa/releases/download/v5.1.0/capa-v5.1.0-linux.zip;
+		tar -xzvf capa-v5.1.0-linux.zip;
 		rm -rf capa*.zip;
 		mkdir stratus && cd stratus;
-		wget https://github.com/DataDog/stratus-red-team/releases/download/v1.3.0/stratus-red-team_1.3.0_Linux_x86_64.tar.gz;
-		tar -xzvf stratus-red-team_1.3.0_Linux_x86_64.tar.gz;
+		wget https://github.com/DataDog/stratus-red-team/releases/download/v2.5.6/stratus-red-team_2.5.6_Linux_x86_64.tar.gz;
+		tar -xzvf stratus-red-team_2.5.6_Linux_x86_64.tar.gz;
 		cd ..;
 		rm -rf stratus*.tar.gz;
 		mkdir /usr/share/opencti && cd /usr/share/opencti;
-		wget https://github.com/OpenCTI-Platform/opencti/releases/download/5.3.17/opencti-release-5.3.17.tar.gz;
-		tar -xzvf opencti-release-5.3.17.tar.gz;
+		wget https://github.com/OpenCTI-Platform/opencti/releases/download/5.7.6/opencti-release-5.7.6.tar.gz;
+		tar -xzvf opencti-release-5.7.6.tar.gz;
 		rm -rf opencti*.gz;
 		cd /usr/share/tpvm/opencti/opencti-worker/src/;
 		pip3 install -r requirements.txt;
