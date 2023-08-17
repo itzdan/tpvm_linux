@@ -13,7 +13,7 @@ show_menu(){
     echo '▀▀█▀▀ █──█ █▀▀█ █▀▀ █▀▀█ ▀▀█▀▀ █▀▀█ █──█ █▀▀█ █▀▀ █──█ ─▀─ ▀▀█▀▀'
     echo '──█── █▀▀█ █▄▄▀ █▀▀ █▄▄█ ──█── █──█ █──█ █▄▄▀ ▀▀█ █──█ ▀█▀ ──█──'
     echo '──▀── ▀──▀ ▀─▀▀ ▀▀▀ ▀──▀ ──▀── █▀▀▀ ─▀▀▀ ▀─▀▀ ▀▀▀ ─▀▀▀ ▀▀▀ ──▀──'
-    echo '(v) 0.2 dev edition (w) https://github.com/itzdan/tpvm_linux | (c) @itzdan1337'
+    echo '(v) 0.3 dev edition (w) https://github.com/itzdan/tpvm_linux | (c) actual[at]google[.]com'
     normal=`echo "\033[m"`
     menu=`echo "\033[36m"` #green
     number=`echo "\033[33m"` #red
@@ -107,6 +107,7 @@ while [ $opt != '' ]
 		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/api-samples-python.git;
 		git clone --recurse-submodules --remote-submodule https://github.com/Chronicle-Security/cbn-tool.git;
 		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/cli.git;
+  		git clone --recurse-submodules --remote-submodule https://github.com/arkime/arkim;
 		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/ingestion-scripts.git;
 		printf "grabbing packages..";
 		echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list;
