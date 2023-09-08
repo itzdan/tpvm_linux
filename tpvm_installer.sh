@@ -140,6 +140,9 @@ while [ $opt != '' ]
 		git clone --recurse-submodules https://github.com/center-for-threat-informed-defense/adversary_emulation_library.git;
 		git clone --recurse-submodules https://github.com/mitre/emu.git;
 		git clone --recurse-submodules https://github.com/OTRF/Security-Datasets.git;
+  		mkdir vertexproject && cd vertexproject;
+    		wget https://github.com/vertexproject/synapse-quickstart/archive/refs/heads/main.zip && unzip main.zip;
+      		rm -r main.zip;
 		git clone --recurse-submodules https://github.com/OTRF/OSSEM.git;
 		git clone --recurse-submodules https://github.com/mandiant/capa-rules;
 		git clone --recurse-submodules https://github.com/mandiant/heyserial.git;
