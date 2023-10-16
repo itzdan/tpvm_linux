@@ -156,6 +156,10 @@ while [ $opt != '' ]
 		tar -xzvf stratus-red-team_2.5.6_Linux_x86_64.tar.gz;
 		cd ..;
 		rm -rf stratus*.tar.gz;
+  		wget https://www.openinfosecfoundation.org/download/suricata-7.0.1.tar.gz;
+    		tar -xzvf suricata-7.0.1.tar.gz;
+      		rm -rf suricata-7.0.1.tar.gz;
+		
 		mkdir /usr/share/opencti && cd /usr/share/opencti;
 		wget https://github.com/OpenCTI-Platform/opencti/releases/download/5.7.6/opencti-release-5.7.6.tar.gz;
 		tar -xzvf opencti-release-5.7.6.tar.gz;
@@ -165,6 +169,11 @@ while [ $opt != '' ]
 		cd /usr/share/tpvm/;
 		wget https://dist.torproject.org/torbrowser/11.0.6/tor-browser-linux64-11.0.6_en-US.tar.xz;
 		tar -xf tor-browser-linux64-11.0.6_en-US.tar.xz;
+  		rm -rf tor-browser-linux*.tar.xz;
+    		wget https://www.crowdstrike.com/wp-content/uploads/2020/06/cs-misp-importer-beta-release-4.zip;
+      		tar -xzvf cs-misp-importer-beta-release-4.zip;
+		wget https://www.crowdstrike.com/wp-content/uploads/2020/03/Tortilla_v1.1.0_Beta.zip;
+  		tar -xzvf Tortilla_v1.1.0_Beta.zip;
 		apt-get install -y openjdk-8-jre-headless;
 		wget https://maltego-downloads.s3.us-east-2.amazonaws.com/linux/Maltego.v4.3.0.deb;
 		dpkg -i Maltego.v4.3.0.deb;
