@@ -109,9 +109,13 @@ while [ $opt != '' ]
 		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/cli.git;
   		git clone --recurse-submodules --remote-submodule https://github.com/arkime/arkim;
 		git clone --recurse-submodules --remote-submodule https://github.com/chronicle/ingestion-scripts.git;
+  		git clone --recurse-submodules --remote-submodule https://github.com/cisagov/ICSNPP.git;
+    		git clone --recurse-submodules --remote-submodule https://github.com/activecm/rita.git;
+      		git clone --recurse-submodules --remote-submodule https://github.com/Velocidex/velociraptor.git;
 		printf "grabbing packages..";
-		echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list;
+  		wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg;
 		apt-get update;
+  		echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list;
 		apt-get install -y elasticsearch kibana;
 		wget https://github.com/constellation-app/constellation/releases/download/v2.5.0/constellation-linux-v2.5.0.tar.gz;
 		cd /usr/share/tpvm/;
