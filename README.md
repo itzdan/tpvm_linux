@@ -1,6 +1,6 @@
 # tpvm_linux
 ThreatPursuitVM Cyber Threat Intelligence VM for Linux
-- Off-spin of Windows-based Mandiant ThreatPursuitVM 
+- Port of Mandiant's Windows-based ThreatPursuitVM 
 - Updated packages
 - Quick and fast
 
@@ -13,7 +13,7 @@ Tested on Debian Linux 5.10.0-10-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_
 
 - x4 CPU
 - 8GB Memory
-- 80GB HDD Capacity
+- 120GB HDD Capacity
 - GPU 512MB or greater
 
 ## Installation
