@@ -163,7 +163,7 @@ while [ $opt != '' ]
   		wget https://www.openinfosecfoundation.org/download/suricata-7.0.1.tar.gz;
     		tar -xzvf suricata-7.0.1.tar.gz;
       		rm -rf suricata-7.0.1.tar.gz;
-		
+		pip install passivetotal --no-input
 		mkdir /usr/share/opencti && cd /usr/share/opencti;
 		wget https://github.com/OpenCTI-Platform/opencti/releases/download/5.7.6/opencti-release-5.7.6.tar.gz;
 		tar -xzvf opencti-release-5.7.6.tar.gz;
