@@ -151,6 +151,7 @@ while [ $opt != '' ]
 		git clone --recurse-submodules https://github.com/mandiant/capa-rules;
 		git clone --recurse-submodules https://github.com/mandiant/heyserial.git;
 		git clone --recurse-submodules https://github.com/mandiant/apooxml.git;
+  		git clone --recurse-submodules https://github.com/montysecurity/C2-Tracker.git;
 		git clone --recurse-submodules https://github.com/mandiant/ioc_writer.git;
 		wget https://github.com/mandiant/capa/releases/download/v5.1.0/capa-v5.1.0-linux.zip;
 		tar -xzvf capa-v5.1.0-linux.zip;
